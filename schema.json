@@ -7,7 +7,7 @@
                         "default": "",
                         "required": ["data"],
                         "properties": {
-                                "fastq_dir": {
+                                "data": {
                                         "type": "string",
                                         "default": "workspace",
                                         "format": "directory-path",
