@@ -51,5 +51,4 @@ echo "✔ Analysis Completed!"
 echo "============================================="
 
 cd $RIVER_HOME/jobs/$job_id/analysis
-ENV=web-template-analysis-$tag
-pixi run streamlit run river/app.py --server.port $PORT --server.headless true
+pixi run streamlit run Home.py --server.port $PORT --server.headless true
