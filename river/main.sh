@@ -51,4 +51,10 @@ echo "✔ Analysis Completed!"
 echo "============================================="
 
 cd $RIVER_HOME/jobs/$job_id/analysis
+if [ -d data ]; then
+    echo "Data directory exists."
+else
+    echo "Data directory does not exist. Get it from cloud storage."
+    ln -sf $data data
+fi
 pixi run streamlit run Home.py --server.port $PORT --server.headless true
